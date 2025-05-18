@@ -1,6 +1,6 @@
-const colorPickerContainerEl = document.querySelector(".widget");
+const colorPickerContainerEl = document.querySelector(".color-picker");
 const btnEl = document.querySelector(".change-color");
-btnEl.addEventListener("change", getRandomHexColor);
+btnEl.addEventListener("click", getRandomHexColor);
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
